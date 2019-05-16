@@ -36,12 +36,24 @@
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
+
 			Reveal.initialize({
+
+                // - (required) your allotted time for presentation
+                allottedTime: 14 * 60 * 1000, // 14 minutes
+
+                // - (optional) height of page/time progress bar
+                progressBarHeight: 1.5,
+
+                // - (optional) bar color
+                barColor: 'rgb(135,206,250)',
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/elapsed-time-bar/elapsed-time-bar.js' }
 				]
 			});
 		</script>
