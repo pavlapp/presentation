@@ -11,7 +11,7 @@ ol li, ul li {
     font-size: 35px;
 }
 
-.main-information{
+.main-information {
     display: flex;
     flex-wrap: wrap;
 }
