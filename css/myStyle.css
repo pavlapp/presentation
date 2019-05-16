@@ -1,0 +1,17 @@
+.first-slide h1 {
+    text-transform: initial;
+    margin-bottom: 0;
+}
+
+.first-slide ul {
+    margin-bottom: 15px;
+}
+
+ol li, ul li {
+    font-size: 35px;
+}
+
+.main-information{
+    display: flex;
+    flex-wrap: wrap;
+}
