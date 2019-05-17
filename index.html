@@ -293,8 +293,12 @@
 
         </section>
 
-        <section class="bulbID">
+        <section >
             <h2>A takto to vyzerá...</h2>
+            <div class="bulbID">
+
+            </div>
+
         </section>
 
     </div>
@@ -308,7 +312,7 @@
         method: "get",
         url: "https://pavlap-dp.j13.sk/application/ziarovka/html",
         success: function (result) {
-            $('section.bulbID').append(result);
+            $('div.bulbID').append(result);
             $.getScript("https://pavlap-dp.j13.sk/application/ziarovka/js");
         }
     });
