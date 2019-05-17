@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="css/theme/black.css">
     <link rel="stylesheet" href="css/myStyle.css">
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <link href="http://pavlap-dp.j13.sk/application/ziarovka/css" rel="stylesheet" type="text/css"/>
+
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/monokai.css">
 
@@ -218,37 +225,66 @@
 
         <section>
             <h2>1. Registrácia používateľa</h2>
-            <video id="videoOne" muted loop controls>
-                <source src="video/registration2.mp4" type="video/mp4">
+            <video id="registration_video" muted loop controls>
+                <source src="video/registration.mp4" type="video/mp4">
             </video>
-
-            <script>
-                var video = document.getElementById("videoOne");
-                video.addEventListener("canplay", function() {
-                    setTimeout(function() {
-                        video.play();
-                    }, 8500);
-                });
-
-            </script>
         </section>
 
         <section>
             <h2>2. Vytvorenie aplikácie</h2>
-            <video muted loop controls>
+            <video id="createApp_video" muted loop controls>
                 <source src="video/createApp.mp4" type="video/mp4">
             </video>
         </section>
 
         <section>
             <h2>3. Schválenie aplikácie</h2>
-            <video muted loop controls>
+            <video id="approveApp_video" muted loop controls>
                 <source src="video/approveApp.mp4" type="video/mp4">
             </video>
         </section>
 
         <section>
-            <h3>Fázy schválenia aplikácie</h3>
+            <h3>Je aplikácia schválená?</h3>
+            <img style="border: 0; box-shadow:none; background:none;" src="img/notSend.png">
+            <img style="border: 0; box-shadow:none; background:none;" src="img/send.png">
+            <img style="border: 0; box-shadow:none; background:none;" src="img/dontApprove.png">
+            <img style="border: 0; box-shadow:none; background:none;" src="img/approveApp.png">
+        </section>
+
+        <section>
+            <h2>4. Publikovaná aplikácia</h2>
+            <video id="publicApp_video" muted loop controls>
+                <source src="video/publicApp.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <h3>Možnosti zdieľania aplikácie</h3>
+            <ol>
+                <li>
+                    manuálne skopírovanie HTML, CSS a JS kódu z webového portálu,
+                </li>
+                <li>
+                    zdieľanie pomocou HTML tagu iFrame,
+                </li>
+                <li>
+                    volanie API služby.
+                </li>
+            </ol>
+
+            <script type="text/template">
+
+                <pre>
+                    <code data-trim data-noescape>
+                     <link href="http://pavlap-dp.j13.sk/application/ziarovka/css" rel="stylesheet" type="text/css" />
+                    </code>
+                </pre>
+            </script>
+
+        </section>
+
+        <section class="bulbID">
 
         </section>
 
@@ -257,7 +293,20 @@
 
 <script src="js/reveal.js"></script>
 
+
 <script>
+    $.ajax({
+        method: "get",
+        url: "http://pavlap-dp.j13.sk/application/ziarovka/html",
+        success: function (result) {
+            $('section.bulbID').append(result);
+            $.getScript("http://pavlap-dp.j13.sk/application/ziarovka/js");
+        }
+    });
+</script>
+
+<script>
+
     // More info about config & dependencies:
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
