@@ -273,14 +273,25 @@
                 </li>
             </ol>
 
-            <script type="text/template">
+            <pre>
+                <code>
 
-                <pre>
-                    <code data-trim data-noescape>
-                     <link href="http://pavlap-dp.j13.sk/application/ziarovka/css" rel="stylesheet" type="text/css" />
-                    </code>
-                </pre>
-            </script>
+<link href="http://pavlap-dp.j13.sk/application/ziarovka/css"
+      rel="stylesheet" type="text/css"/>
+
+<script>
+  $.ajax({
+      method: "get",
+      url: "http://pavlap-dp.j13.sk/application/ziarovka/html",
+      success: function (result) {
+          $('body').append(result);
+          $.getScript("http://pavlap-dp.j13.sk/application/ziarovka/js");
+      }
+  });
+</script>
+
+                </code>
+            </pre>
 
         </section>
 
