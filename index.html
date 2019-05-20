@@ -269,7 +269,7 @@
 
         <section>
             <h3>Možnosti zdieľania aplikácie</h3>
-            <ol>
+            <ol style="margin-bottom: 0;">
                 <li>
                     priame odkázanie sa na webový portál,
                 </li>
@@ -283,19 +283,19 @@
                     volanie API služby.
                 </li>
             </ol>
-
-            <pre>
+            <pre style="margin-top: 0;">
                 <code>
-<link href="URL-CSS"
+<link href="https://pavlap-dp.j13.sk/application/ziarovka/css"
       rel="stylesheet" type="text/css"/>
 
 <script>
+  var baseUrl = "https://pavlap-dp.j13.sk/";
   $.ajax({
       method: "get",
-      url: "URL-HTML",
+      url: baseUrl + "application/ziarovka/html",
       success: function (result) {
           $('body').append(result);
-          $.getScript("URL-JS");
+          $.getScript(baseUrl + "application/ziarovka/js");
       }
   });
 </script>
