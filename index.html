@@ -175,13 +175,13 @@
             <br>
             <div class="fanding_line"></div>
             <div style="text-align: center">
-                <p style="color: #ffe119;">
+                <p class="fragment" style="color: #ffe119;">
                     1. Zmenil sa spôsob výučby na vašej katedre?
                 </p>
-                <p style="color: #3cb44b;">
+                <p class="fragment" style="color: #3cb44b;">
                     2. Vzrástol počet pedagógov, ktorí začali využívať interaktívnu tabuľu v procese výučby?
                 </p>
-                <p style="color: #f58231;">
+                <p class="fragment" style="color: #f58231;">
                     3. Využívate interaktívnu tabuľu aj iným spôsobom ako iba premietaciu plochu?
                 </p>
             </div>
@@ -254,10 +254,10 @@
 
         <section>
             <h3>Je aplikácia schválená?</h3>
-            <img style="border: 0; box-shadow:none; background:none;" src="img/notSend.png">
-            <img style="border: 0; box-shadow:none; background:none;" src="img/send.png">
-            <img style="border: 0; box-shadow:none; background:none;" src="img/dontApprove.png">
-            <img style="border: 0; box-shadow:none; background:none;" src="img/approveApp.png">
+            <img class="fragment" style="border: 0; box-shadow:none; background:none;" src="img/notSend.png">
+            <img class="fragment" style="border: 0; box-shadow:none; background:none;" src="img/send.png">
+            <img class="fragment" style="border: 0; box-shadow:none; background:none;" src="img/dontApprove.png">
+            <img class="fragment" style="border: 0; box-shadow:none; background:none;" src="img/approveApp.png">
         </section>
 
         <section>
@@ -271,6 +271,9 @@
             <h3>Možnosti zdieľania aplikácie</h3>
             <ol>
                 <li>
+                    priame odkázanie sa na webový portál,
+                </li>
+                <li>
                     manuálne skopírovanie HTML, CSS a JS kódu z webového portálu,
                 </li>
                 <li>
@@ -283,16 +286,16 @@
 
             <pre>
                 <code>
-<link href="https://pavlap-dp.j13.sk/application/ziarovka/css"
+<link href="URL-CSS"
       rel="stylesheet" type="text/css"/>
 
 <script>
   $.ajax({
       method: "get",
-      url: "https://pavlap-dp.j13.sk/application/ziarovka/html",
+      url: "URL-HTML",
       success: function (result) {
           $('body').append(result);
-          $.getScript("https://pavlap-dp.j13.sk/application/ziarovka/js");
+          $.getScript("URL-JS");
       }
   });
 </script>
