@@ -40,12 +40,12 @@
             <br>
             <div class="main-information">
                 <div class="content-author">
-                    <p><b>Autor:</b> Bc. Pavla Pichaničová</p>
-                    <p><b>Školiteľ:</b> Ing. Miroslav Biňas, PhD.</p>
+                    <p style="font-size: 25px"><b>Autor:</b> Bc. Pavla Pichaničová</p>
+                    <p style="font-size: 25px"><b>Školiteľ:</b> Ing. Miroslav Biňas, PhD.</p>
                 </div>
                 <div class="content-description">
-                    <p><u><b>Cieľ práce:</b></u></p>
-                    <p>
+                    <p style="font-size: 25px"><u><b>Cieľ práce:</b></u></p>
+                    <p style="font-size: 25px">
                         Vytvorenie mechanizmu na zdieľanie interaktívnych aplikácií vytvorených pomocou HTML5
                         technológií.
                     </p>
@@ -124,24 +124,31 @@
 
         <section>
             <h3> Boli vám poskytnuté školenia? </h3>
-            <span>Odpovede respondentov z vysokých škôl:</span>
-            <canvas data-chart="pie" style="margin-top: 10px;">
+
+            <canvas data-chart="bar">
                 <!--
-                    {
-                     "data": {
-                      "labels": ["Áno - 96%","Nie - 4%"],
-                      "datasets": [
-                       {
-                        "data":[96,4]
-                       }
-                      ]
-                     },
-                     "options": {
-                        "responsive": "true"
-                      }
-                    }
-                    -->
+                {
+                 "data": {
+                  "labels": ["Základná škola"," Stredná škola"," Vysoká škola"],
+                  "datasets": [
+                   {
+                    "data":[75,90,16],
+                    "label":"Áno","backgroundColor":"rgba(230, 25, 75,.9)"
+                   },
+                   {
+                    "data":[25,10,84],
+                    "label":"Nie","backgroundColor":"rgba(245, 130, 48,.9)"
+                   }
+                  ]
+                 },
+                 "options": {
+                    "responsive": "true",
+                    "labels":"true"
+                  }
+                }
+                -->
             </canvas>
+
         </section>
 
         <section>
@@ -166,7 +173,7 @@
                 </li>
             </ul>
             <br>
-            <hr>
+            <div class="fanding_line"></div>
             <div style="text-align: center">
                 <p style="color: #ffe119;">
                     1. Zmenil sa spôsob výučby na vašej katedre?
@@ -187,6 +194,12 @@
             </p>
             <img style="border: 0; box-shadow:none; background:none;" src="img/result.png">
         </section>
+
+        <section>
+            <h1>Analýza záveru...</h1>
+            <img style="border: 0; box-shadow:none; background:none;" src="img/questionMark2.png">
+        </section>
+
 
         <section>
             <h1>Možné riešenie?</h1>
@@ -225,19 +238,18 @@
         </section>
 
         <section>
-            <h2>1. Registrácia používateľa</h2>
-            <iframe width="760" height="515" src="https://www.youtube.com/embed/JTqpnvHISEY?playlist=JTqpnvHISEY&loop=1&autoplay=1" frameborder="0"></iframe>
-        </section>
-
-        <section>
-            <h2>2. Vytvorenie aplikácie</h2>
-            <iframe width="760" height="515" src="https://www.youtube.com/embed/j9gnwg4ZDYM?playlist=j9gnwg4ZDYM&loop=1" frameborder="0"></iframe>
+            <h2>1. Vytvorenie aplikácie</h2>
+            <div class="fanding_line"></div>
+            <iframe width="760" height="515" src="https://www.youtube.com/embed/j9gnwg4ZDYM?playlist=j9gnwg4ZDYM&loop=1"
+                    frameborder="0"></iframe>
 
         </section>
 
         <section>
-            <h2>3. Schválenie aplikácie</h2>
-            <iframe width="760" height="515" src="https://www.youtube.com/embed/CaAdpTo09Jg?playlist=CaAdpTo09Jg&loop=1" frameborder="0"></iframe>
+            <h2>2. Schválenie aplikácie</h2>
+            <div class="fanding_line"></div>
+            <iframe width="760" height="515" src="https://www.youtube.com/embed/CaAdpTo09Jg?playlist=CaAdpTo09Jg&loop=1"
+                    frameborder="0"></iframe>
         </section>
 
         <section>
@@ -249,8 +261,10 @@
         </section>
 
         <section>
-            <h2>4. Publikovaná aplikácia</h2>
-            <iframe width="760" height="515" src="https://www.youtube.com/embed/PlqDfqiKUbY?playlist=PlqDfqiKUbY&loop=1" frameborder="0"></iframe>
+            <h2>3. Publikovaná aplikácia</h2>
+            <div class="fanding_line"></div>
+            <iframe width="760" height="515" src="https://www.youtube.com/embed/PlqDfqiKUbY?playlist=PlqDfqiKUbY&loop=1"
+                    frameborder="0"></iframe>
         </section>
 
         <section>
@@ -286,7 +300,7 @@
             </pre>
         </section>
 
-        <section >
+        <section>
             <h1>Výsledok...</h1>
             <div class="bulbID">
 
@@ -300,23 +314,33 @@
         </section>
 
         <section>
-            <p style="font-size: 25px;">Ako by ste postupovali v prípade, že by Vašim cieľom bolo vylepšiť použiteľnosť resp. používateľský zážitok portálu?</p>
-            <hr style="border-color: #ffe119;">
-            <p style="font-size: 25px;"><span style="color: #ffe119;">1.</span> Do hlavičky zakomponovať vyhľadávanie aplikácií.</p>
+            <p> Ako by ste postupovali v prípade, že by Vašim cieľom bolo vylepšiť použiteľnosť resp.
+                používateľský zážitok portálu?</p>
+        </section>
+
+        <section>
+            <h3>Vyhľadávanie aplikácií</h3>
+            <div class="fanding_line"></div>
             <img style="border: 0; box-shadow:none; background:none;" src="img/question1.png">
 
-            <p style="font-size: 25px;"><span style="color: #ffe119;">2.</span> Umožniť autorom aplikácií nastavovanie viditeľnosti aplikácie.</p>
+        </section>
+        <section>
+            <h3>Nastavenie viditeľnosti aplikácie</h3>
+            <div class="fanding_line"></div>
             <img style="border: 0; box-shadow:none; background:none;" src="img/question2.png">
 
-            <p style="font-size: 25px;"><span style="color: #ffe119;">3.</span> Vytvorenie notifikačných e-mailov:</p>
+        </section>
+        <section>
+            <h3>Notifikačné e-maily</h3>
+            <div class="fanding_line"></div>
             <ul>
-                <li style="font-size: 25px;">
+                <li>
                     zmena stavu aplikácie,
                 </li>
-                <li style="font-size: 25px;">
+                <li>
                     nová správa,
                 </li>
-                <li style="font-size: 25px;">
+                <li>
                     nový komentár.
                 </li>
             </ul>

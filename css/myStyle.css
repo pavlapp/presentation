@@ -32,3 +32,11 @@ ol li {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+.fanding_line {
+    margin: 25px 0;
+    height: 1px;
+    background: orange;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(19,19,19)), to(rgb(19,19,19)), color-stop(50%, orange));
+}
